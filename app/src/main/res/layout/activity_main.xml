@@ -1,0 +1,120 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/video_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#80FFFFFF"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/messagee_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dear Guest,"
+            android:layout_marginStart="210dp"
+            android:textColor="#674636"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="0dp"
+            android:text="\n\nWe are thrilled to have you at                                 \nWhether your visit is for business or leisure, we are committed to \n ensuring your stay is enjoyable and memorable. \nIf there's anything we can do, please feel free to get in \n touch with our awesome team by \n\nHave a wonderful stay!\n\nErvira Syahputri"
+            android:textColor="#674636"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/messaage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Citadines Berawa Beach Bali. "
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="41dp"
+            android:textColor="#674636"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/messsage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n\nGeneral Manager"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="200dp"
+            android:textColor="#674636"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mmessage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="388dp"
+            android:layout_marginTop="122dp"
+            android:textStyle="bold"
+            android:text="pressing '0'."
+            android:textColor="#674636"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:text="citadines"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="1dp"
+        android:text="Berawa Beach"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/subbtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle_text"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="-4dp"
+        android:text="Bali"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Press Enter to Continue   >"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
