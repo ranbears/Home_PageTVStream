@@ -17,7 +17,7 @@ public class Traffic extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.traffic_cctv); 
+        setContentView(R.layout.traffic_cctv);
 
         recyclerView = findViewById(R.id.menu_fac);
 
@@ -28,7 +28,6 @@ public class Traffic extends AppCompatActivity {
         trafficList.add(new TrafficData("Bridge D", R.drawable.kopii, "Accident reported, expect delays."));
         trafficList.add(new TrafficData("Tunnel E", R.drawable.se, "Clear traffic."));
 
-        // Atur adapter untuk RecyclerView
         trafficAdapter = new TrafficAdapter(trafficList, trafficData ->
                 Toast.makeText(Traffic.this, "Clicked: " + trafficData.getName(), Toast.LENGTH_SHORT).show()
         );
@@ -37,7 +36,6 @@ public class Traffic extends AppCompatActivity {
         recyclerView.setAdapter(trafficAdapter);
     }
 
-    // Kelas model untuk data lalu lintas
     public static class TrafficData {
         private final String name;
         private final int imageResId;

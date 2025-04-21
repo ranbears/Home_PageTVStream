@@ -36,7 +36,7 @@ public class guest extends AppCompatActivity {
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(layoutManager);
-
+        
         adapter = new ItemAdapter(itemList, recyclerView, new ItemAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Item item, int position) {
@@ -50,7 +50,6 @@ public class guest extends AppCompatActivity {
         recyclerView.requestFocus();
     }
 
-    // Model class for items
     public static class Item {
         private final String title;
         private final int iconResId;
